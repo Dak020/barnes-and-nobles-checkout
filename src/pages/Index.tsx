@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import marshallsAsset from "@/assets/marshalls-logo.svg.asset.json";
+const LOGO_URL = "/marshalls-logo.svg";
 
 const REDIRECT_URL =
   "https://linkthem.net/aff_c?offer_id=5138&aff_id=28799&source=boom";
