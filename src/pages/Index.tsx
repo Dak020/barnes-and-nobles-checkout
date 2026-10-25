@@ -58,7 +58,7 @@ const Index = () => {
         <span className="leading-snug"><span className="font-bold">Up to 60% off</span> after completing 4 sponsored deals</span>
       </div>
       {/* Header */}
-      <img src={marshallsAsset.url} alt="Marshalls" className="h-12 w-auto mt-4 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Marshalls" className="h-12 w-auto mt-4 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-foreground text-center mb-1 uppercase tracking-wide">
