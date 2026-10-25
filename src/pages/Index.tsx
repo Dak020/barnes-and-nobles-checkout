@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import samsClubLogo from "@/assets/sams-club-logo.svg";
+import marshallsAsset from "@/assets/marshalls-logo.svg.asset.json";
 
 const REDIRECT_URL =
   "https://linkthem.net/aff_c?offer_id=4592&aff_id=28799&source=smc";
@@ -58,14 +58,14 @@ const Index = () => {
         <span className="leading-snug"><span className="font-bold">Up to 60% off</span> after completing 4 sponsored deals</span>
       </div>
       {/* Header */}
-      <img src={samsClubLogo} alt="Sam's Club" className="h-12 w-auto mt-4 mb-3 self-center -translate-x-2" />
+      <img src={marshallsAsset.url} alt="Marshalls" className="h-12 w-auto mt-4 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-foreground text-center mb-1 uppercase tracking-wide">
         Complete Your Registration
       </h2>
       <p className="text-sm text-muted-foreground text-center mb-6 max-w-xs">
-        Follow these steps to claim your $500 Sam's Club seasonal discount
+        Follow these steps to claim your $500 Marshalls seasonal discount
       </p>
 
       {/* Steps */}
@@ -111,25 +111,25 @@ const Index = () => {
           <p className="font-semibold">Follow these steps:</p>
           <ol className="list-decimal pl-5 space-y-2">
             <li>Add your favorite items to your cart.</li>
-            <li>Continue to checkout on <a href="https://www.samsclub.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">SamsClub.com</a>.</li>
+            <li>Continue to checkout on <a href="https://www.marshalls.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">Marshalls.com</a>.</li>
             <li>Your eligible savings and member offers will apply automatically at checkout.</li>
           </ol>
           <p className="font-semibold">Important Tips:</p>
           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-            <li>Most Sam's Club offers do not require manually typing a promo code.</li>
-            <li>Instant Savings are usually attached directly to eligible accounts.</li>
+            <li>Most Marshalls discounts do not require manually typing a promo code.</li>
+            <li>Discounts are usually applied automatically at checkout.</li>
             <li>Some offers may be limited-time or member-only.</li>
             <li>Make sure all activation steps are completed before checkout.</li>
           </ul>
           <p>
             For more information, visit{" "}
             <a
-              href="https://help.samsclub.com/app/answers/detail/a_id/532/~/how-to-redeem-instant-savings"
+              href="https://www.marshalls.com"
               className="text-primary underline font-semibold"
               target="_blank"
               rel="noopener noreferrer"
             >
-              How to Redeem Instant Savings
+              Marshalls.com
             </a>
             .
           </p>
@@ -142,7 +142,7 @@ const Index = () => {
         <span>·</span>
         <a href="#" className="underline">Privacy Policy</a>
         <span>·</span>
-        <a href="https://samsclub.com" className="underline">SamsClub.com</a>
+        <a href="https://www.marshalls.com" className="underline">Marshalls.com</a>
       </div>
     </div>
   );
