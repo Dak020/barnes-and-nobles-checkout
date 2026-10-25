@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import marshallsAsset from "@/assets/marshalls-logo.svg.asset.json";
+const LOGO_URL = "/marshalls-logo.svg";
 
 const REDIRECT_URL =
   "https://linkthem.net/aff_c?offer_id=5138&aff_id=28799&source=boom";
@@ -58,7 +58,7 @@ const Index = () => {
         <span className="leading-snug"><span className="font-bold">Up to 60% off</span> after completing 4 sponsored deals</span>
       </div>
       {/* Header */}
-      <img src={marshallsAsset.url} alt="Marshalls" className="h-12 w-auto mt-4 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Marshalls" className="h-12 w-auto mt-4 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-foreground text-center mb-1 uppercase tracking-wide">
