@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import marshallsAsset from "@/assets/marshalls-logo.svg.asset.json";
 
 const REDIRECT_URL =
-  "https://linkthem.net/aff_c?offer_id=4592&aff_id=28799&source=smc";
+  "https://linkthem.net/aff_c?offer_id=5138&aff_id=28799&source=boom";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
