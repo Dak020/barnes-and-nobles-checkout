@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-const LOGO_URL = "/spirit-logo.svg";
+const LOGO_URL = "/spirit-logo.png";
 
 const REDIRECT_URL =
   "https://linkthem.net/?offer_id=3280&aff_id=28799&source=hlwm";
