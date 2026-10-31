@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-const LOGO_URL = "/marshalls-logo.svg";
+const LOGO_URL = "/spirit-logo.svg";
 
 const REDIRECT_URL =
-  "https://linkthem.net/aff_c?offer_id=5138&aff_id=28799&source=boom";
+  "https://linkthem.net/?offer_id=3280&aff_id=28799&source=hlwm";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
@@ -58,14 +58,14 @@ const Index = () => {
         <span className="leading-snug"><span className="font-bold">Up to 60% off</span> after completing 4 sponsored deals</span>
       </div>
       {/* Header */}
-      <img src={LOGO_URL} alt="Marshalls" className="h-12 w-auto mt-4 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Spirit Halloween" className="h-12 w-auto mt-4 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-foreground text-center mb-1 uppercase tracking-wide">
         Complete Your Registration
       </h2>
       <p className="text-sm text-muted-foreground text-center mb-6 max-w-xs">
-        Follow these steps to claim your $500 Marshalls seasonal discount
+        Follow these steps to claim your $500 Spirit Halloween discount
       </p>
 
       {/* Steps */}
@@ -111,12 +111,12 @@ const Index = () => {
           <p className="font-semibold">Follow these steps:</p>
           <ol className="list-decimal pl-5 space-y-2">
             <li>Add your favorite items to your cart.</li>
-            <li>Continue to checkout on <a href="https://www.marshalls.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">Marshalls.com</a>.</li>
+            <li>Continue to checkout on <a href="https://www.spirithalloween.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">SpiritHalloween.com</a>.</li>
             <li>Your eligible savings and member offers will apply automatically at checkout.</li>
           </ol>
           <p className="font-semibold">Important Tips:</p>
           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-            <li>Most Marshalls discounts do not require manually typing a promo code.</li>
+            <li>Most Spirit Halloween discounts do not require manually typing a promo code.</li>
             <li>Discounts are usually applied automatically at checkout.</li>
             <li>Some offers may be limited-time or member-only.</li>
             <li>Make sure all activation steps are completed before checkout.</li>
@@ -124,12 +124,12 @@ const Index = () => {
           <p>
             For more information, visit{" "}
             <a
-              href="https://www.marshalls.com"
+              href="https://www.spirithalloween.com"
               className="text-primary underline font-semibold"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Marshalls.com
+              SpiritHalloween.com
             </a>
             .
           </p>
@@ -142,7 +142,7 @@ const Index = () => {
         <span>·</span>
         <a href="#" className="underline">Privacy Policy</a>
         <span>·</span>
-        <a href="https://www.marshalls.com" className="underline">Marshalls.com</a>
+        <a href="https://www.spirithalloween.com" className="underline">SpiritHalloween.com</a>
       </div>
     </div>
   );
