@@ -62,7 +62,7 @@ const Index = () => {
 
       {/* Title */}
       <h2 className="text-xl font-bold text-foreground text-center mb-1 uppercase tracking-wide">
-        Complete Your Registration
+        Claim Your Discount
       </h2>
       <p className="text-sm text-muted-foreground text-center mb-6 max-w-xs">
         Follow these steps to claim your $500 Spirit Halloween discount
