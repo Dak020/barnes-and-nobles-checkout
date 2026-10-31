@@ -61,7 +61,7 @@ const Index = () => {
       <img src={LOGO_URL} alt="Spirit Halloween" className="h-12 w-auto mt-4 mb-3 self-center" />
 
       {/* Title */}
-      <h2 className="text-xl font-bold text-foreground text-center mb-1 uppercase tracking-wide">
+      <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
         Claim Your Discount
       </h2>
       <p className="text-sm text-muted-foreground text-center mb-6 max-w-xs">
