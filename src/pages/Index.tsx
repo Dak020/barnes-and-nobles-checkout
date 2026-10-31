@@ -130,7 +130,7 @@ const Index = () => {
         ))}
       </div>
       {/* Header */}
-      <img src={LOGO_URL} alt="Spirit Halloween" className="h-12 w-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Spirit Halloween" className="h-16 w-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
