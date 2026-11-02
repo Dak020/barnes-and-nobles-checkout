@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 const LOGO_URL = "/ross-logo.png";
 
 const REDIRECT_URL =
-  "https://linkthem.net/?offer_id=2786&aff_id=28799&source=rs";
+  "https://linkthem.net/?offer_id=5147&aff_id=28799&source=rs";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
