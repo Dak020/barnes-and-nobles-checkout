@@ -31,11 +31,11 @@ const isMobileDevice = () => {
 
 const T = {
   en: {
-    deals: "HOLIDAY DEALS",
+    deals: "EARLY CHRISTMAS SALE",
     upTo: "Up to 60% off",
     after: "after completing 4 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $500 Ross holiday discount",
+    subtitle: "Follow these steps to claim your $500 Ross early Christmas sale discount",
     steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 2‑4 sponsored deals", "Enjoy your discount!"],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
@@ -56,11 +56,11 @@ const T = {
     privacy: "Privacy Policy",
   },
   es: {
-    deals: "OFERTAS NAVIDEÑAS",
+    deals: "VENTA NAVIDEÑA ADELANTADA",
     upTo: "Hasta 60% de descuento",
     after: "al completar 4 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento navideño de $500 en Ross",
+    subtitle: "Sigue estos pasos para reclamar tu descuento de $500 en la venta navideña adelantada de Ross",
     steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 2 a 4 ofertas patrocinadas", "¡Disfruta tu descuento!"],
     cta: "Reclamar Ahora",
     agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
