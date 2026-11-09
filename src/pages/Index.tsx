@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-const LOGO_URL = "/ross-logo.png";
+const LOGO_URL = "/costco-logo.svg";
 
 const REDIRECT_URL =
-  "https://linkthem.net/?offer_id=5147&aff_id=28799&source=rs";
+  "https://linkthem.net/?offer_id=4409&aff_id=28799&source=REV";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
@@ -35,7 +35,7 @@ const T = {
     upTo: "Up to 60% off",
     after: "after completing 4 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $500 Ross early Christmas sale discount",
+    subtitle: "Follow these steps to claim your $500 Costco early Christmas sale discount",
     steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 2‑4 sponsored deals", "Enjoy your discount!"],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
@@ -46,7 +46,7 @@ const T = {
     how3: "Your eligible savings and member offers will apply automatically at checkout.",
     tipsTitle: "Important Tips:",
     tips: [
-      "Most Ross discounts do not require manually typing a promo code.",
+      "Most Costco discounts do not require manually typing a promo code.",
       "Discounts are usually applied automatically at checkout.",
       "Some offers may be limited-time or member-only.",
       "Make sure all activation steps are completed before checkout.",
@@ -60,7 +60,7 @@ const T = {
     upTo: "Hasta 60% de descuento",
     after: "al completar 4 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de $500 en la venta navideña adelantada de Ross",
+    subtitle: "Sigue estos pasos para reclamar tu descuento de $500 en la venta navideña adelantada de Costco",
     steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 2 a 4 ofertas patrocinadas", "¡Disfruta tu descuento!"],
     cta: "Reclamar Ahora",
     agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
@@ -71,7 +71,7 @@ const T = {
     how3: "Tus ahorros y ofertas para miembros se aplicarán automáticamente al pagar.",
     tipsTitle: "Consejos Importantes:",
     tips: [
-      "La mayoría de los descuentos de Ross no requieren escribir un código promocional.",
+      "La mayoría de los descuentos de Costco no requieren escribir un código promocional.",
       "Los descuentos normalmente se aplican automáticamente al pagar.",
       "Algunas ofertas pueden ser por tiempo limitado o solo para miembros.",
       "Asegúrate de completar todos los pasos de activación antes de pagar.",
@@ -105,7 +105,7 @@ const Index = () => {
 
   const t = T[lang];
   const site = (
-    <a href="https://www.ross.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">Ross.com</a>
+    <a href="https://www.costco.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">Costco.com</a>
   );
 
   return (
@@ -130,7 +130,7 @@ const Index = () => {
         ))}
       </div>
       {/* Header */}
-      <img src={LOGO_URL} alt="Ross Dress for Less" className="h-16 w-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Costco Wholesale" className="h-16 w-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
@@ -188,7 +188,7 @@ const Index = () => {
         <span>·</span>
         <a href="#" className="underline">{t.privacy}</a>
         <span>·</span>
-        <a href="https://www.ross.com" className="underline">Ross.com</a>
+        <a href="https://www.costco.com" className="underline">Costco.com</a>
       </div>
     </div>
   );
