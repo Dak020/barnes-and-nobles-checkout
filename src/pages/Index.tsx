@@ -46,7 +46,7 @@ const T = {
     how3: "Your eligible savings and member offers will apply automatically at checkout.",
     tipsTitle: "Important Tips:",
     tips: [
-      "Most Ross discounts do not require manually typing a promo code.",
+      "Most Costco discounts do not require manually typing a promo code.",
       "Discounts are usually applied automatically at checkout.",
       "Some offers may be limited-time or member-only.",
       "Make sure all activation steps are completed before checkout.",
@@ -71,7 +71,7 @@ const T = {
     how3: "Tus ahorros y ofertas para miembros se aplicarán automáticamente al pagar.",
     tipsTitle: "Consejos Importantes:",
     tips: [
-      "La mayoría de los descuentos de Ross no requieren escribir un código promocional.",
+      "La mayoría de los descuentos de Costco no requieren escribir un código promocional.",
       "Los descuentos normalmente se aplican automáticamente al pagar.",
       "Algunas ofertas pueden ser por tiempo limitado o solo para miembros.",
       "Asegúrate de completar todos los pasos de activación antes de pagar.",
