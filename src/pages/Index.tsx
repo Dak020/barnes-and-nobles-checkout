@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 const LOGO_URL = "/sams-club-logo.png";
 
-const REDIRECT_URL =
+export const REDIRECT_URL =
   "https://linkthem.net/?offer_id=4258&aff_id=28799&source=smc";
 
 const isLovablePreview = () => {
