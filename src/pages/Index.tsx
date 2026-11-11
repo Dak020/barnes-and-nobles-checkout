@@ -29,7 +29,7 @@ const isMobileDevice = () => {
   );
 };
 
-const T = {
+export const T = {
   en: {
     deals: "EARLY CHRISTMAS SALE",
     upTo: "Up to 60% off",
