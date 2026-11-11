@@ -6,9 +6,9 @@ describe("example", () => {
     expect(true).toBe(true);
   });
 
-  it("uses the requested Sam's Club offer link", () => {
+  it("uses the requested Spirit Halloween offer link", () => {
     expect(REDIRECT_URL).toBe(
-      "https://linkthem.net/?offer_id=4258&aff_id=28799&source=smc"
+      "https://linkthem.net/?offer_id=5569&aff_id=28799&source=GOD"
     );
   });
 });
