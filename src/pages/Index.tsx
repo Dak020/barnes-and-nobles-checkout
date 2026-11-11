@@ -29,14 +29,14 @@ const isMobileDevice = () => {
   );
 };
 
-const T = {
+export const T = {
   en: {
     deals: "EARLY CHRISTMAS SALE",
     upTo: "Up to 60% off",
-    after: "after completing 4 sponsored deals",
+    after: "after completing 5 sponsored deals",
     title: "Claim Your Discount",
     subtitle: "Follow these steps to claim your $500 Spirit Christmas discount",
-    steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 2‑4 sponsored deals", "Enjoy your discount!"],
+    steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 3‑5 sponsored deals", "Enjoy your discount!"],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
     howTitle: "How to Use Your Savings",
@@ -58,10 +58,10 @@ const T = {
   es: {
     deals: "VENTA NAVIDEÑA ADELANTADA",
     upTo: "Hasta 60% de descuento",
-    after: "al completar 4 ofertas patrocinadas",
+    after: "al completar 5 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de $500 en la venta navideña adelantada de Spirit Halloween",
-    steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 2 a 4 ofertas patrocinadas", "¡Disfruta tu descuento!"],
+    subtitle: "Sigue estos pasos para reclamar tu descuento de $500 de Spirit Christmas",
+    steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 3 a 5 ofertas patrocinadas", "¡Disfruta tu descuento!"],
     cta: "Reclamar Ahora",
     agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
     howTitle: "Cómo Usar Tus Ahorros",
