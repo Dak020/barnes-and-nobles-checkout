@@ -35,7 +35,7 @@ const T = {
     upTo: "Up to 60% off",
     after: "after completing 4 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $500 Spirit Halloween early Christmas sale discount",
+    subtitle: "Follow these steps to claim your $500 Spirit Christmas discount",
     steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 2‑4 sponsored deals", "Enjoy your discount!"],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
