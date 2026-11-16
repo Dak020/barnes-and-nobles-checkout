@@ -43,11 +43,11 @@ export const T = {
     follow: "Follow these steps:",
     how1: "Add your favorite items to your cart.",
     how2: "Continue to checkout on",
-    how3: "Your eligible savings and member offers will apply automatically at checkout.",
+    how3: "Enter your promo code in the code field at checkout, then apply it.",
     tipsTitle: "Important Tips:",
     tips: [
-      "Most Neiman Marcus discounts do not require manually typing a promo code.",
-      "Discounts are usually applied automatically at checkout.",
+      "Enter the promo code in the designated field at checkout.",
+      "Confirm the discount appears before placing your order.",
       "Some offers may be limited-time or member-only.",
       "Make sure all activation steps are completed before checkout.",
     ],
@@ -68,11 +68,11 @@ export const T = {
     follow: "Sigue estos pasos:",
     how1: "Agrega tus artículos favoritos al carrito.",
     how2: "Continúa al pago en",
-    how3: "Tus ahorros y ofertas para miembros se aplicarán automáticamente al pagar.",
+    how3: "Escribe tu código promocional en el campo correspondiente al pagar y aplícalo.",
     tipsTitle: "Consejos Importantes:",
     tips: [
-      "La mayoría de los descuentos de Neiman Marcus no requieren escribir un código promocional.",
-      "Los descuentos normalmente se aplican automáticamente al pagar.",
+      "Escribe el código promocional en el campo indicado al pagar.",
+      "Confirma que el descuento aparezca antes de realizar tu pedido.",
       "Algunas ofertas pueden ser por tiempo limitado o solo para miembros.",
       "Asegúrate de completar todos los pasos de activación antes de pagar.",
     ],
@@ -124,7 +124,7 @@ const Index = () => {
         {lang === "en" ? "Español" : "English"}
       </button>
       {/* Header */}
-      <img src={LOGO_URL} alt="Neiman Marcus" className="h-16 w-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Neiman Marcus" className="h-20 w-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">

@@ -20,4 +20,11 @@ describe("example", () => {
     expect(T.en.after).toBe("after completing 5 sponsored deals");
     expect(T.es.after).toBe("al completar 5 ofertas patrocinadas");
   });
+
+  it("instructs shoppers to enter promo codes manually at checkout in both languages", () => {
+    expect(T.en.how3).toContain("Enter your promo code in the code field at checkout");
+    expect(T.es.how3).toContain("Escribe tu código promocional en el campo correspondiente al pagar");
+    expect(T.en.tips).not.toContain("Discounts are usually applied automatically at checkout.");
+    expect(T.es.tips).not.toContain("Los descuentos normalmente se aplican automáticamente al pagar.");
+  });
 });
