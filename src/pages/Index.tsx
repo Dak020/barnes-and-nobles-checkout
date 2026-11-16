@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-const LOGO_URL = "/spirit-christmas-logo.jpg";
+const LOGO_URL = "/neiman-marcus-logo.svg";
 
 export const REDIRECT_URL =
-  "https://linkthem.net/?offer_id=5569&aff_id=28799&source=GOD";
+  "https://giftclick.org/?offer_id=4448&aff_id=28799&source=Q4";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
@@ -31,11 +31,11 @@ const isMobileDevice = () => {
 
 export const T = {
   en: {
-    deals: "EARLY CHRISTMAS SALE",
+    deals: "BLACK FRIDAY SALE",
     upTo: "Up to 60% off",
     after: "after completing 5 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $500 Spirit Christmas discount",
+    subtitle: "Follow these steps to claim your $750 Neiman Marcus Black Friday discount",
     steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 3‑5 sponsored deals", "Enjoy your discount!"],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
@@ -46,7 +46,7 @@ export const T = {
     how3: "Your eligible savings and member offers will apply automatically at checkout.",
     tipsTitle: "Important Tips:",
     tips: [
-      "Most Spirit Halloween discounts do not require manually typing a promo code.",
+      "Most Neiman Marcus discounts do not require manually typing a promo code.",
       "Discounts are usually applied automatically at checkout.",
       "Some offers may be limited-time or member-only.",
       "Make sure all activation steps are completed before checkout.",
@@ -56,11 +56,11 @@ export const T = {
     privacy: "Privacy Policy",
   },
   es: {
-    deals: "VENTA NAVIDEÑA ADELANTADA",
+    deals: "VENTA DE BLACK FRIDAY",
     upTo: "Hasta 60% de descuento",
     after: "al completar 5 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de $500 de Spirit Christmas",
+    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $750 de Neiman Marcus",
     steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 3 a 5 ofertas patrocinadas", "¡Disfruta tu descuento!"],
     cta: "Reclamar Ahora",
     agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
@@ -71,7 +71,7 @@ export const T = {
     how3: "Tus ahorros y ofertas para miembros se aplicarán automáticamente al pagar.",
     tipsTitle: "Consejos Importantes:",
     tips: [
-      "La mayoría de los descuentos de Spirit Halloween no requieren escribir un código promocional.",
+      "La mayoría de los descuentos de Neiman Marcus no requieren escribir un código promocional.",
       "Los descuentos normalmente se aplican automáticamente al pagar.",
       "Algunas ofertas pueden ser por tiempo limitado o solo para miembros.",
       "Asegúrate de completar todos los pasos de activación antes de pagar.",
@@ -105,7 +105,7 @@ const Index = () => {
 
   const t = T[lang];
   const site = (
-    <a href="https://www.spirithalloween.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">SpiritHalloween.com</a>
+    <a href="https://www.neimanmarcus.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">NeimanMarcus.com</a>
   );
 
   return (
@@ -117,20 +117,14 @@ const Index = () => {
         <span className="leading-snug"><span className="font-bold">{t.upTo}</span> {t.after}</span>
       </div>
       {/* Language toggle */}
-      <div className="self-end flex rounded-full border border-border bg-card p-0.5 text-xs font-bold shadow-sm" role="group" aria-label="Language">
-        {(["en", "es"] as const).map((l) => (
-          <button
-            key={l}
-            onClick={() => setLang(l)}
-            aria-pressed={lang === l}
-            className={`rounded-full px-3 py-1 transition-colors ${lang === l ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
-          >
-            {l === "en" ? "EN" : "ES"}
-          </button>
-        ))}
-      </div>
+      <button
+        onClick={() => setLang(lang === "en" ? "es" : "en")}
+        className="self-end rounded-full border border-border bg-card px-4 py-1 text-xs font-bold shadow-sm text-foreground"
+      >
+        {lang === "en" ? "Español" : "English"}
+      </button>
       {/* Header */}
-      <img src={LOGO_URL} alt="Spirit Halloween" className="h-16 w-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Neiman Marcus" className="h-16 w-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
@@ -188,7 +182,7 @@ const Index = () => {
         <span>·</span>
         <a href="#" className="underline">{t.privacy}</a>
         <span>·</span>
-        <a href="https://www.spirithalloween.com" className="underline">SpiritHalloween.com</a>
+        <a href="https://www.neimanmarcus.com" className="underline">NeimanMarcus.com</a>
       </div>
     </div>
   );
