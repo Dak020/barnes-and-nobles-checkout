@@ -119,7 +119,7 @@ const Index = () => {
       {/* Language toggle */}
       <button
         onClick={() => setLang(lang === "en" ? "es" : "en")}
-        className="self-end rounded-full border border-border bg-card px-4 py-1 text-xs font-bold shadow-sm text-foreground"
+        className="self-end rounded-md bg-cta px-4 py-2 text-xs font-bold text-cta-foreground shadow-sm"
       >
         {lang === "en" ? "Español" : "English"}
       </button>
