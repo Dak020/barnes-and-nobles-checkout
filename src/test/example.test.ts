@@ -12,9 +12,9 @@ describe("example", () => {
     );
   });
 
-  it("uses Black Friday $750 wording and the 3-to-5 deal range in both languages", () => {
-    expect(T.en.subtitle).toBe("Follow these steps to claim your $750 Barnes & Noble Black Friday discount");
-    expect(T.es.subtitle).toBe("Sigue estos pasos para reclamar tu descuento de Black Friday de $750 de Barnes & Noble");
+  it("uses Black Friday $500 wording and the 3-to-5 deal range in both languages", () => {
+    expect(T.en.subtitle).toBe("Follow these steps to claim your $500 Barnes & Noble Black Friday discount");
+    expect(T.es.subtitle).toBe("Sigue estos pasos para reclamar tu descuento de Black Friday de $500 de Barnes & Noble");
     expect(T.en.steps[2]).toBe("Complete 3‑5 sponsored deals");
     expect(T.es.steps[2]).toBe("Completa de 3 a 5 ofertas patrocinadas");
     expect(T.en.after).toBe("after completing 5 sponsored deals");

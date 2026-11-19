@@ -35,7 +35,7 @@ export const T = {
     upTo: "Up to 60% off",
     after: "after completing 5 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $750 Barnes & Noble Black Friday discount",
+    subtitle: "Follow these steps to claim your $500 Barnes & Noble Black Friday discount",
     steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 3‑5 sponsored deals", "Enjoy your discount!"],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
@@ -60,7 +60,7 @@ export const T = {
     upTo: "Hasta 60% de descuento",
     after: "al completar 5 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $750 de Barnes & Noble",
+    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $500 de Barnes & Noble",
     steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 3 a 5 ofertas patrocinadas", "¡Disfruta tu descuento!"],
     cta: "Reclamar Ahora",
     agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
@@ -141,7 +141,7 @@ const Index = () => {
             key={i}
             className="flex items-center gap-4 rounded-lg border border-border bg-card px-4 py-3.5 shadow-sm"
           >
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cta text-sm font-bold text-cta-foreground">
               {i + 1}
             </span>
             <span className="text-sm font-medium text-foreground">{text}</span>
