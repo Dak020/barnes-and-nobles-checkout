@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-const LOGO_URL = "/neiman-marcus-logo.svg";
+const LOGO_URL = "/barnes-noble-logo.png";
 
 export const REDIRECT_URL =
-  "https://giftclick.org/?offer_id=4448&aff_id=28799&source=Q4";
+  "https://giftclick.org/?offer_id=4347&aff_id=28799&source=B2";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
@@ -35,7 +35,7 @@ export const T = {
     upTo: "Up to 60% off",
     after: "after completing 5 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $750 Neiman Marcus Black Friday discount",
+    subtitle: "Follow these steps to claim your $750 Barnes & Noble Black Friday discount",
     steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 3‑5 sponsored deals", "Enjoy your discount!"],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
@@ -60,7 +60,7 @@ export const T = {
     upTo: "Hasta 60% de descuento",
     after: "al completar 5 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $750 de Neiman Marcus",
+    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $750 de Barnes & Noble",
     steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 3 a 5 ofertas patrocinadas", "¡Disfruta tu descuento!"],
     cta: "Reclamar Ahora",
     agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
@@ -105,7 +105,7 @@ const Index = () => {
 
   const t = T[lang];
   const site = (
-    <a href="https://www.neimanmarcus.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">NeimanMarcus.com</a>
+    <a href="https://www.barnesandnoble.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">BarnesandNoble.com</a>
   );
 
   return (
@@ -124,7 +124,7 @@ const Index = () => {
         {lang === "en" ? "Español" : "English"}
       </button>
       {/* Header */}
-      <img src={LOGO_URL} alt="Neiman Marcus" className="h-20 w-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Barnes & Noble" className="w-full max-w-xs h-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
@@ -182,7 +182,7 @@ const Index = () => {
         <span>·</span>
         <a href="#" className="underline">{t.privacy}</a>
         <span>·</span>
-        <a href="https://www.neimanmarcus.com" className="underline">NeimanMarcus.com</a>
+        <a href="https://www.barnesandnoble.com" className="underline">BarnesandNoble.com</a>
       </div>
     </div>
   );
