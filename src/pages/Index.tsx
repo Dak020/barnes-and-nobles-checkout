@@ -36,7 +36,7 @@ export const T = {
     upTo: "Up to $500 off",
     after: "after completing 5 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $500 BJ's Wholesale Black Friday discount",
+    subtitle: "Follow these steps to claim your $500 Black Friday discount",
     steps: [
       'Click on "Claim Now"',
       "Start the sign up process",
@@ -66,7 +66,7 @@ export const T = {
     upTo: "Hasta $500 de descuento",
     after: "al completar 5 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $500 de BJ's Wholesale",
+    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $500",
     steps: [
       'Haz clic en "Reclamar Ahora"',
       "Inicia el proceso de registro",
@@ -146,7 +146,7 @@ const Index = () => {
       </button>
 
       {/* Header */}
-      <img src={LOGO_URL} alt="BJ's Wholesale" className="w-24 h-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Logo" className="w-24 h-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
