@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+
 const LOGO_URL = "/barnes-noble-logo.svg";
 
 export const REDIRECT_URL =
-  "https://giftclick.org/?offer_id=4347&aff_id=28799&source=B2";
+  "https://giftclick.org/?offer_id=4248&aff_id=28799&source=bjw";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
@@ -32,11 +33,16 @@ const isMobileDevice = () => {
 export const T = {
   en: {
     deals: "BLACK FRIDAY SALE",
-    upTo: "Up to 60% off",
+    upTo: "Up to $500 off",
     after: "after completing 5 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $500 Barnes & Noble Black Friday discount",
-    steps: ['Click on "Claim Now"', "Start the sign up process", "Complete 3‑5 sponsored deals", "Enjoy your discount!"],
+    subtitle: "Follow these steps to claim your $500 BJ's Wholesale Black Friday discount",
+    steps: [
+      'Click on "Claim Now"',
+      "Start the sign up process",
+      "Complete 5 sponsored deals",
+      "Enjoy your discount!",
+    ],
     cta: "Claim Now",
     agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
     howTitle: "How to Use Your Savings",
@@ -57,11 +63,16 @@ export const T = {
   },
   es: {
     deals: "VENTA DE BLACK FRIDAY",
-    upTo: "Hasta 60% de descuento",
+    upTo: "Hasta $500 de descuento",
     after: "al completar 5 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $500 de Barnes & Noble",
-    steps: ['Haz clic en "Reclamar Ahora"', "Inicia el proceso de registro", "Completa de 3 a 5 ofertas patrocinadas", "¡Disfruta tu descuento!"],
+    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $500 de BJ's Wholesale",
+    steps: [
+      'Haz clic en "Reclamar Ahora"',
+      "Inicia el proceso de registro",
+      "Completa 5 ofertas patrocinadas",
+      "¡Disfruta tu descuento!",
+    ],
     cta: "Reclamar Ahora",
     agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
     howTitle: "Cómo Usar Tus Ahorros",
@@ -105,7 +116,14 @@ const Index = () => {
 
   const t = T[lang];
   const site = (
-    <a href="https://www.barnesandnoble.com" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold">BarnesandNoble.com</a>
+    <a
+      href="https://www.bjs.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-primary underline font-semibold"
+    >
+      BJs.com
+    </a>
   );
 
   return (
@@ -114,8 +132,11 @@ const Index = () => {
       <div className="-mx-4 -mt-8 mb-3 self-stretch bg-primary text-primary-foreground px-5 py-3 flex items-center gap-4 text-sm">
         <span className="font-semibold tracking-wide whitespace-nowrap">{t.deals}</span>
         <span className="h-5 w-px bg-white/40 shrink-0" />
-        <span className="leading-snug"><span className="font-bold">{t.upTo}</span> {t.after}</span>
+        <span className="leading-snug">
+          <span className="font-bold">{t.upTo}</span> {t.after}
+        </span>
       </div>
+
       {/* Language toggle */}
       <button
         onClick={() => setLang(lang === "en" ? "es" : "en")}
@@ -123,8 +144,9 @@ const Index = () => {
       >
         {lang === "en" ? "Español" : "English"}
       </button>
+
       {/* Header */}
-      <img src={LOGO_URL} alt="Barnes & Noble" className="w-24 h-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="BJ's Wholesale" className="w-24 h-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
@@ -170,7 +192,9 @@ const Index = () => {
           </ol>
           <p className="font-semibold">{t.tipsTitle}</p>
           <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-            {t.tips.map((tip, i) => <li key={i}>{tip}</li>)}
+            {t.tips.map((tip, i) => (
+              <li key={i}>{tip}</li>
+            ))}
           </ul>
           <p>{t.more} {site}.</p>
         </div>
@@ -182,7 +206,7 @@ const Index = () => {
         <span>·</span>
         <a href="#" className="underline">{t.privacy}</a>
         <span>·</span>
-        <a href="https://www.barnesandnoble.com" className="underline">BarnesandNoble.com</a>
+        <a href="https://www.bjs.com" className="underline">BJs.com</a>
       </div>
     </div>
   );
