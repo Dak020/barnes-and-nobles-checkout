@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-const LOGO_URL = "/barnes-noble-logo.png";
+const LOGO_URL = "/barnes-noble-logo.svg";
 
 export const REDIRECT_URL =
   "https://giftclick.org/?offer_id=4347&aff_id=28799&source=B2";
@@ -124,7 +124,7 @@ const Index = () => {
         {lang === "en" ? "Español" : "English"}
       </button>
       {/* Header */}
-      <img src={LOGO_URL} alt="Barnes & Noble" className="w-full max-w-xs h-auto mt-2 mb-3 self-center" />
+      <img src={LOGO_URL} alt="Barnes & Noble" className="w-24 h-auto mt-2 mb-3 self-center" />
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
