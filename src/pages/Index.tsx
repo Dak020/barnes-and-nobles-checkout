@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 
-const LOGO_URL = "/barnes-noble-logo.svg";
-
 export const REDIRECT_URL =
-  "https://giftclick.org/?offer_id=4248&aff_id=28799&source=bjw";
+  "https://giftclick.org/?offer_id=5041&aff_id=28799&source=B2";
 
 const isLovablePreview = () => {
   if (typeof window === "undefined") return false;
@@ -33,10 +31,10 @@ const isMobileDevice = () => {
 export const T = {
   en: {
     deals: "BLACK FRIDAY SALE",
-    upTo: "Up to $500 off",
+    upTo: "Up to $750 off",
     after: "after completing 5 sponsored deals",
     title: "Claim Your Discount",
-    subtitle: "Follow these steps to claim your $500 Black Friday discount",
+    subtitle: "Follow these steps to claim your $750 Black Friday discount",
     steps: [
       'Click on "Claim Now"',
       "Start the sign up process",
@@ -44,11 +42,11 @@ export const T = {
       "Enjoy your discount!",
     ],
     cta: "Claim Now",
-    agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your gift card.',
+    agree: 'By clicking "Claim Now", you agree to complete the required steps to receive your reward.',
     howTitle: "How to Use Your Savings",
     follow: "Follow these steps:",
     how1: "Add your favorite items to your cart.",
-    how2: "Continue to checkout on",
+    how2: "Continue to checkout on the partner store.",
     how3: "Enter your promo code in the code field at checkout, then apply it.",
     tipsTitle: "Important Tips:",
     tips: [
@@ -57,16 +55,16 @@ export const T = {
       "Some offers may be limited-time or member-only.",
       "Make sure all activation steps are completed before checkout.",
     ],
-    more: "For more information, visit",
+    more: "For more information, review the program guidelines.",
     terms: "User Agreement",
     privacy: "Privacy Policy",
   },
   es: {
     deals: "VENTA DE BLACK FRIDAY",
-    upTo: "Hasta $500 de descuento",
+    upTo: "Hasta $750 de descuento",
     after: "al completar 5 ofertas patrocinadas",
     title: "Reclama Tu Descuento",
-    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $500",
+    subtitle: "Sigue estos pasos para reclamar tu descuento de Black Friday de $750",
     steps: [
       'Haz clic en "Reclamar Ahora"',
       "Inicia el proceso de registro",
@@ -74,11 +72,11 @@ export const T = {
       "¡Disfruta tu descuento!",
     ],
     cta: "Reclamar Ahora",
-    agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu tarjeta de regalo.',
+    agree: 'Al hacer clic en "Reclamar Ahora", aceptas completar los pasos requeridos para recibir tu recompensa.',
     howTitle: "Cómo Usar Tus Ahorros",
     follow: "Sigue estos pasos:",
     how1: "Agrega tus artículos favoritos al carrito.",
-    how2: "Continúa al pago en",
+    how2: "Continúa al pago en la tienda asociada.",
     how3: "Escribe tu código promocional en el campo correspondiente al pagar y aplícalo.",
     tipsTitle: "Consejos Importantes:",
     tips: [
@@ -87,7 +85,7 @@ export const T = {
       "Algunas ofertas pueden ser por tiempo limitado o solo para miembros.",
       "Asegúrate de completar todos los pasos de activación antes de pagar.",
     ],
-    more: "Para más información, visita",
+    more: "Para más información, revisa las pautas del programa.",
     terms: "Acuerdo de Usuario",
     privacy: "Política de Privacidad",
   },
@@ -115,20 +113,10 @@ const Index = () => {
   }
 
   const t = T[lang];
-  const site = (
-    <a
-      href="https://www.bjs.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-primary underline font-semibold"
-    >
-      BJs.com
-    </a>
-  );
 
   return (
     <div className="min-h-screen bg-background flex flex-col items-center px-4 py-8">
-      {/* Top deals banner */}
+      {/* Top banner */}
       <div className="-mx-4 -mt-8 mb-3 self-stretch bg-primary text-primary-foreground px-5 py-3 flex items-center gap-4 text-sm">
         <span className="font-semibold tracking-wide whitespace-nowrap">{t.deals}</span>
         <span className="h-5 w-px bg-white/40 shrink-0" />
@@ -145,8 +133,10 @@ const Index = () => {
         {lang === "en" ? "Español" : "English"}
       </button>
 
-      {/* Header */}
-      <img src={LOGO_URL} alt="Logo" className="w-24 h-auto mt-2 mb-3 self-center" />
+      {/* Wordmark */}
+      <h1 className="text-2xl font-serif tracking-widest uppercase text-foreground mt-3 mb-2 self-center">
+        REWARDS
+      </h1>
 
       {/* Title */}
       <h2 className="text-xl font-bold text-primary text-center mb-1 uppercase tracking-wide">
@@ -171,7 +161,7 @@ const Index = () => {
         ))}
       </div>
 
-      {/* CTA */}
+      {/* CTA Button */}
       <a
         href={REDIRECT_URL}
         className="block w-full max-w-md rounded-full bg-cta py-4 text-center text-base font-bold tracking-wide text-cta-foreground uppercase shadow-md active:scale-[0.97] transition-transform"
@@ -180,14 +170,14 @@ const Index = () => {
       </a>
       <p className="mt-3 text-xs text-muted-foreground text-center max-w-xs">{t.agree}</p>
 
-      {/* How to use code */}
+      {/* Instructions */}
       <div className="w-full max-w-md mt-10 space-y-4">
         <h3 className="text-lg font-bold text-foreground uppercase tracking-wide">{t.howTitle}</h3>
         <div className="rounded-lg border border-border bg-card p-4 space-y-3 text-sm text-foreground">
           <p className="font-semibold">{t.follow}</p>
           <ol className="list-decimal pl-5 space-y-2">
             <li>{t.how1}</li>
-            <li>{t.how2} {site}.</li>
+            <li>{t.how2}</li>
             <li>{t.how3}</li>
           </ol>
           <p className="font-semibold">{t.tipsTitle}</p>
@@ -196,7 +186,6 @@ const Index = () => {
               <li key={i}>{tip}</li>
             ))}
           </ul>
-          <p>{t.more} {site}.</p>
         </div>
       </div>
 
@@ -205,8 +194,6 @@ const Index = () => {
         <a href="#" className="underline">{t.terms}</a>
         <span>·</span>
         <a href="#" className="underline">{t.privacy}</a>
-        <span>·</span>
-        <a href="https://www.bjs.com" className="underline">BJs.com</a>
       </div>
     </div>
   );
